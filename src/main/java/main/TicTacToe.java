@@ -20,14 +20,14 @@ public static int[][] ticbox;
 	for(int row=0;row<3;row++)
 	{
 		if(tic[row][0] ==1 && tic[row][1] ==1 && tic[row][2] ==1)
-			{
+	
 			return 1;
 			if(tic[row][0] ==2 && tic[row][1] ==2 && tic[row][2] ==2)
-			{
-			return 1;
 
-         
-			}
+			return 2;
+			
+	}
+			
 		for(int col=0;col<3;col++)
 		{
 			if(tic[0][col] == 1 &&  tic[1][col] ==1 && tic[2][col]== 1)
@@ -47,8 +47,8 @@ public static int[][] ticbox;
 			return 2;
 	
 		    return 0;
-		
 	}
+
 	
 	public static void printBox(int [][]tic) {
 		for(int i=0;i<3;i++) {
